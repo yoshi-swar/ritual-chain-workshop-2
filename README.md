@@ -106,3 +106,24 @@ betting model is plain pari-mutuel: two running totals and one mapping per side.
 - Ritual Chain docs — <https://docs.ritualfoundation.org>
 - dApp skills — <https://github.com/ritual-foundation/ritual-dapp-skills>
 - Explorer — <https://explorer.ritualfoundation.org> · Faucet — <https://faucet.ritualfoundation.org>
+## My Resolution Notes
+
+I spent more time tracing the resolution path than changing
+the prediction rules.
+
+The useful distinction for me was:
+
+Scheduler = when to run
+
+TEE executor = where external execution happens
+
+HTTP = obtain the response
+
+jq = extract the value
+
+comparison = determine the outcome
+
+Invalid = no usable resolution after the available attempts
+
+Writing those roles down made the architecture much easier
+to remember.
